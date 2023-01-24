@@ -86,6 +86,7 @@ public class FinancialProjectionApplication {
         JComponent panel_AssumMain = new JPanel(new GridBagLayout());
         JComponent panel_AssumSpouse = new JPanel(new GridBagLayout());
         JComponent panel_AssumAV = new JPanel(new GridBagLayout());
+        JComponent panel_Housing = new JPanel(new GridBagLayout());
         JComponent panel_InvestmentReturns = new JPanel(new GridBagLayout());
 
         GridBagConstraints c = new GridBagConstraints();
@@ -842,6 +843,113 @@ public class FinancialProjectionApplication {
 
         tabbedPane.addTab("Retirement Account Assumptions", panel_AssumAV);
 
+
+        /*
+        Housing
+         */
+
+
+        JLabel housing_JointExpenses, housing_RentExpense, housing_CurrentSituation,housing_mortgagePayment, housing_HomeValue, housing_MaintExp;
+        JComboBox housing_currentSituation_Response;
+        JTextField housing_JointExpenses_Response,housing_RentExpense_Response,housing_mortgagePayment_Response, housing_HomeValue_Response, housing_MaintExp_Response;
+        JSlider housing_MaintExp_Slider;
+
+        //Set Labels
+        housing_JointExpenses = new JLabel("Joint Household Expenses:");
+        housing_RentExpense = new JLabel("Current Rent Expense:");
+        housing_CurrentSituation = new JLabel("Current Housing Situation:");
+        housing_mortgagePayment = new JLabel("Current Mortgage Expense:");
+        housing_HomeValue = new JLabel("Home Value:");
+        housing_MaintExp = new JLabel("Annual Maintenance Expenses:");
+
+        //Housing Options
+        String[] housingOptions = {"Renter","Homeowner","Eventual Homeowner"};
+        housing_currentSituation_Response = new JComboBox(housingOptions);
+        housing_currentSituation_Response.setSelectedIndex(1);
+
+        //Joint Expenses
+        housing_JointExpenses_Response = new JTextField(10);
+        housing_JointExpenses_Response.setText("2000");
+
+        //Rent Expense
+        housing_RentExpense_Response = new JTextField(10);
+        housing_RentExpense_Response.setText("1800");
+
+        //Mortgage
+        housing_mortgagePayment_Response = new JTextField(10);
+        housing_mortgagePayment_Response.setText("2500");
+
+        //Home Value
+        housing_HomeValue_Response = new JTextField(10);
+        housing_HomeValue_Response.setText("500000");
+
+        //Maintenance Expenses
+        housing_MaintExp_Response = new JTextField(10);
+        housing_MaintExp_Slider = new JSlider(0, 500, 100);
+
+        setPreferredSliders(housing_MaintExp_Slider, dict, 100, 100, true, true, 400, 50);
+        linkTextFieldAndSlider(housing_MaintExp_Response,housing_MaintExp_Slider,100.0);
+
+
+        y_count =0;
+        y_infl_sal = 0;
+
+        c2.gridx = 0;
+        c2.anchor = GridBagConstraints.EAST;
+        c2.fill = 0;
+        c2.insets = EAST_INSETS;
+
+        c2.gridy = y_count;
+        panel_Housing.add(housing_CurrentSituation,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_JointExpenses,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_RentExpense,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_mortgagePayment,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_HomeValue,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_MaintExp,c2);
+        y_count++;
+
+        c2.gridx = 1;
+        c2.anchor = GridBagConstraints.EAST;
+        c2.fill = GridBagConstraints.HORIZONTAL;
+        c2.insets = EAST_INSETS;
+
+        int y_MaintExp=0;
+        y_count = 0;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_currentSituation_Response,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_JointExpenses_Response,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_RentExpense_Response,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_mortgagePayment_Response,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_HomeValue_Response,c2);
+        y_count++;
+        c2.gridy = y_count;
+        panel_Housing.add(housing_MaintExp_Slider,c2);
+        y_MaintExp = y_count;
+        y_count++;
+
+        c2.gridx = 2;
+        c2.gridy = y_MaintExp;
+        panel_Housing.add(housing_MaintExp_Response,c2);
+
+        tabbedPane.addTab("Housing Assumptions", panel_Housing);
 
 
         /*
