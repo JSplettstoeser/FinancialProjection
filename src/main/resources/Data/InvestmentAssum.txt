@@ -1,0 +1,9 @@
+InitialAllocationPct_Equity,1
+RetirementAllocationPct_Equity,0.6
+GradingPeriod,8
+EquityReturn_Mean,0.07
+EquityReturn_SD,0.15
+BondReturn_Mean,0.03
+BondReturn_SD,0.05
+ScenarioCount,1000
+Seed,1234

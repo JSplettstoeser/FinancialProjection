@@ -1,0 +1,12 @@
+PIABend_1,0.9
+PIABend_2,0.32
+PIABend_3,0.15
+FMBBend_1,1.5
+FMBBend_2,2.72
+FMBBend_3,1.34
+FMBBend_4,1.75
+SS_MinimumAge,65
+SS_BeginAge,69
+SS_UseExpectedDeferralAdj,1
+SS_Adjustment,0.75
+SS_Inflation,0.02

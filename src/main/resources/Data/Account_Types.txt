@@ -1,0 +1,8 @@
+AccountName,IsRoth,IsRetirementAccount,ID
+Roth IRA,1,1,1
+Trad IRA,0,1,2
+Roth 401k,1,1,3
+Trad 401k,0,1,4
+Savings,0,0,5
+Taxable,0,0,6
+Debt,0,0,7

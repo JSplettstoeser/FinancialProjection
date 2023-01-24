@@ -1,0 +1,12 @@
+CurrentYear,2022
+ProjectionYears,75
+State,MN - Minnesota
+ExpenseInflation,0.02
+TaxBracketInflation,0.02
+401kMax,19000
+IRAMax,6000
+RetirementLimitInflation,0.015
+HealthcareInflation,0.04
+PostRetirementHealthcareJump,0.5
+MedicareStartAge,65
+MedicareHealthAdj,0.85

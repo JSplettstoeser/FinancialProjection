@@ -1,0 +1,10 @@
+Name,Joe
+Age,25
+PriorWorkingYears,8
+PriorWorkingAvgSalary,30000
+InitialSalary,35000
+SalaryInflation,0.03
+HealthInsurance,0
+HealthInsuranceFreq,24
+PersonalExpenses_monthly,800
+RetirementAge,55

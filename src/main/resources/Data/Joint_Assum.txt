@@ -1,0 +1,2 @@
+LivingExpenses_monthly,3000
+HousingExpenses_monthly,2200

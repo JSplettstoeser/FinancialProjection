@@ -1,0 +1,7 @@
+Savings,0
+Roth IRA,0
+Trad IRA,0
+Roth 401k,0
+Trad 401k,0
+Taxable,0
+Debt,0

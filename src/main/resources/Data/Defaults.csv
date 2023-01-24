@@ -1,0 +1,65 @@
+InvAssum_EquityReturn_Mean,700
+AV_Trad IRA_Person1,0
+Person1_HealthInsurance,180
+AV_Trad IRA_Person2,0
+Person1_Age,25
+AV_Savings_Joint,0
+Person2_RetirementAge,55
+Person1_SalaryInflation,200
+HealthcareInflation,400
+PostRetirementHealthcareJump,50%
+InvAssum_ScenarioCount,1000
+Person1_Name,
+AV_Debt_Joint,0
+Person2_PersonalExpenses_monthly,1000
+Person2_HealthInsuranceFreq,Biweekly
+ExpenseInflation,200
+InvAssum_RetirementAllocationPct_Equity,100
+MedicareStartAge,65
+AV_Roth IRA_Person1,0
+AV_Roth IRA_Person2,0
+InvAssum_InitialAllocationPct_Equity,100
+AV_Debt_Person2,0
+AV_Debt_Person1,0
+AV_Taxable_Person2,0
+AV_Taxable_Person1,0
+Person1_HealthInsuranceFreq,Biweekly
+Person2_PriorWorkingYears,5
+Person1_PersonalExpenses_monthly,1000
+InvAssum_Seed,1234
+Person2_InitialSalary,45000
+AV_Trad 401k_Person2,0
+AV_Trad 401k_Person1,0
+InvAssum_BondReturn_Mean,300
+SS_Inflation,200
+AV_Trad IRA_Joint,0
+MedicareHealthAdj,85%
+Person1_PriorWorkingYears,5
+State,MN - Minnesota
+IRAMax,6000
+RetirementLimitInflation,150
+AV_Savings_Person1,0
+401kMax,19000
+Person2_Name,
+AV_Savings_Person2,0
+InvAssum_BondReturn_SD,500
+AV_Taxable_Joint,0
+Person1_InitialSalary,100000
+SS_BeginAge,39
+InvAssum_EquityReturn_SD,1500
+SS_Adjustment,50%
+Person1_PriorWorkingAvgSalary,50000
+Person2_HealthInsurance,0
+AV_Roth 401k_Joint,0
+AV_Trad 401k_Joint,0
+TaxBracketInflation,200
+AV_Roth IRA_Joint,0
+InvAssum_GradingPeriod,8
+Person2_SalaryInflation,200
+AV_Roth 401k_Person1,0
+AV_Roth 401k_Person2,0
+Person2_PriorWorkingAvgSalary,30000
+Person1_RetirementAge,55
+CurrentYear,2010
+ProjectionYears,75
+Person2_Age,25
